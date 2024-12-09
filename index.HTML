@@ -1,0 +1,433 @@
+
+<html><head>
+<meta name="title" content="Usyk vs Fury 2 Live | KRBGY.ONLINE">
+<meta name="description" content="Watch the highly anticipated heavyweight boxing rematch between Oleksandr Usyk and Tyson Fury live on KRBGY.ONLINE. Don't miss this epic clash of titans!">
+<meta name="keywords" content="Usyk, Fury, Tyson Fury, Oleksandr Usyk, boxing, heavyweight, live stream, fight, boxing match, rematch, watch online, KRBGY, KRBGY.ONLINE">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Usyk vs Fury 2 Live Boxing Match | KRBGY.ONLINE">
+<meta property="og:description" content="Watch the highly anticipated heavyweight boxing rematch between Oleksandr Usyk and Tyson Fury live on KRBGY.ONLINE. Don't miss this epic clash of titans!">
+<meta property="og:image" content="https://iili.io/J9a5EFV.webp"> <!-- Replace with an actual image URL related to Usyk vs Fury -->
+<meta property="og:url" content="https://krbgy.online/">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">  <!-- Recommended card type for images -->
+<meta name="twitter:title" content="Usyk vs Fury 2 Live Boxing Match | KRBGY.ONLINE">
+<meta name="twitter:description" content="Watch the highly anticipated heavyweight boxing rematch between Oleksandr Usyk and Tyson Fury live on KRBGY.ONLINE. Don't miss this epic clash of titans!">
+<meta name="twitter:image" content="https://iili.io/J9a5EFV.webp"> <!-- Replace with an actual image URL related to Usyk vs Fury -->
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --primary: #1a1a1a;
+    --secondary: #252525;
+    --accent: #ff3e3e;
+    --text: #ffffff;
+}
+
+body {
+    background: var(--primary);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: var(--secondary);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.player-container {
+    background: var(--secondary);
+    aspect-ratio: 16/9;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 1rem 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23000"/></svg>');
+    background-size: cover;
+    background-position: center;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.2);
+    border: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play-button:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.loading {
+    display: none;
+    gap: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    animation: bounce 0.5s infinite alternate;
+    opacity: 0.8;
+}
+
+.dot:nth-child(2) { animation-delay: 0.2s; }
+.dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+    to { transform: translateY(-8px); }
+}
+
+.live-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    animation: pulse 1.5s infinite;
+}
+
+.viewer-count {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0,0,0,0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}
+
+.chat-section {
+    background: var(--secondary);
+    border-radius: 12px;
+    margin: 1rem 0;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.chat-input {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(0,0,0,0.2);
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.1);
+    color: var(--text);
+}
+
+.chat-input button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background: var(--accent);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.content-section {
+    background: var(--secondary);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+
+.content-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.content-section p {
+    margin-bottom: 1.5rem;
+}
+
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.keyword {
+    background: rgba(255,255,255,0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
+    
+    .play-button {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .content-section {
+        padding: 1rem;
+    }
+    
+    .content-section h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
+    .player-container {
+        border-radius: 8px; /* Slightly smaller radius on mobile */
+    }
+    .play-button {
+        width: 50px; /* Smaller play button */
+        height: 50px;
+    }
+    .chat-section {
+        height: 300px; /* Adjust chat height as needed */
+        border-radius: 8px;
+    }
+    .chat-input input {
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+    .content-section {
+        padding: 1rem;
+    }
+    .content-section h1 {
+        font-size: 1.5rem;
+    }
+    .keywords {
+        justify-content: center; /* Center keywords on smaller screens */
+    }
+
+    .logo-container {
+      flex-direction: column; /* Stack logo vertically */
+      align-items: flex-start; /* Align to the left */
+    }
+    .logo {
+        font-size: 1.2rem;  /* Smaller logo font size */
+        margin-bottom: 0.5rem; /* Add some spacing below logo */
+    } 
+
+    h1{
+        font-size: 1.8rem; /* Adjust h1 for smaller screens */
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <a href="#" class="logo">StreamEast Boxing</a>
+    </div>
+</header>
+<div class="container">
+<h1 style='text-align:center;'>USYK VS FURY 2 Live Stream</h1>
+    <div  id='ogButton' class="player-container">
+        <div class="live-badge">
+            <svg width="12" height="12" viewBox="0 0 12 12">
+                <circle cx="6" cy="6" r="6" fill="currentColor"/>
+            </svg>
+            LIVE
+        </div>
+        <div class="viewer-count">
+            <span id="viewers">247,892</span> viewers
+        </div>
+        <button  id='ogButton' class="play-button">▶</button>
+        <div class="loading">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+	
+	
+    <!-- locker code -->
+    <style>
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            margin: 15% auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff0 !important;
+            border: 0px!important;
+        }
+        .lockerPopup {box-shadow: 1px 1px 20px 7px #f00!important;}
+    </style>
+ <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <iframe id="locker" src="https://verifyuser.org/cl/i/1o45qx" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("ogButton");
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+</script>
+
+	<!-- end of the locker code -->
+	
+	
+	
+    <div class="chat-section">
+        <div class="chat-messages" id="chat">
+            <!-- Chat messages will be inserted here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type a message..." />
+            <button>Send</button>
+        </div>
+    </div>
+</div>
+
+<script>
+const viewers = document.getElementById('viewers');
+let viewerCount = 156320;
+
+setInterval(() => {
+    viewerCount += Math.floor(Math.random() * 10) + 1;
+    viewers.textContent = viewerCount.toLocaleString();
+}, 1000);
+
+const playButton = document.querySelector('.play-button');
+const loading = document.querySelector('.loading');
+
+playButton.addEventListener('click', () => {
+    playButton.style.display = 'none';
+    loading.style.display = 'flex';
+});
+
+const chatMessages = [
+"Usyk vs. Fury 2 🔥 This heavyweight clash is going to be colossal!",
+"Can Usyk solidify his legacy with a win over Fury?",
+"Fury's power is legendary. Can Usyk withstand the onslaught?",
+"Usyk by decision. Mark my words.",
+"Underestimating Usyk's boxing skills would be a HUGE mistake.",
+"The heavyweight division is on fire! Don't miss Usyk vs Fury 2.",
+"Fury's size advantage is a major factor. Usyk's got a tough test ahead of him.",
+"So hyped for Usyk vs Fury 2! Who you got?",
+"Usyk's going to put on a masterclass! 🇺🇦",
+"Fury is a force of nature in the heavyweight division. Don't sleep on him! #UsykFury2",
+"Can't wait for this rematch! Usyk vs. Fury 2 is going to be epic. 💥",
+"Fury by KO in the later rounds! Who's with me? 🤔 #UsykFury2",
+"Usyk's movement is elite. Fury needs to cut off the ring. 🥊",
+"Heavyweight is the most prestigious division in boxing right now! Usyk vs Fury 2 is proof. 🔥",
+"Usyk's technical boxing is unmatched. He's going to outbox Fury. 🇺🇦",
+"Get ready for a war! Usyk vs Fury 2 is going to be legendary! 🤩",
+"HD STREAM AVAILABLE! Usyk vs Fury 2 LIVE 😉",  
+"AMAZING QUALITY 🔥🔥🔥✔️📺 Usyk vs Fury 2 LIVE!", 
+];
+
+const chatBox = document.querySelector('.chat-messages');
+const chatInput = document.querySelector('.chat-input input');
+const chatButton = document.querySelector('.chat-input button');
+
+function addChatMessage(message) {
+    const div = document.createElement('div');
+    div.className = 'chat-message';
+    div.textContent = `User${Math.floor(Math.random() * 1000)}: ${message}`;
+    chatBox.appendChild(div);
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+setInterval(() => {
+    addChatMessage(chatMessages[Math.floor(Math.random() * chatMessages.length)]);
+}, 2000);
+
+chatButton.addEventListener('click', () => {
+    if (chatInput.value.trim()) {
+        addChatMessage(chatInput.value);
+        chatInput.value = '';
+    }
+});
+
+chatInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter' && chatInput.value.trim()) {
+        addChatMessage(chatInput.value);
+        chatInput.value = '';
+    }
+});
+</script>
+</body></html>
